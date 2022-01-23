@@ -103,6 +103,9 @@
     .footer-name{
         margin-top: 14px;
     }
+    .cv-btn,.linkedIn-btn{
+        font-size: 13px;
+    }
 }
 @media(max-width:362px){
     .myname{
