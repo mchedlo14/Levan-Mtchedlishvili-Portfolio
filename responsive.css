@@ -1,0 +1,131 @@
+@media(max-width:768px){
+    .bar{
+        display: block;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    .navigation{
+        display: none;
+    }
+    .header-name{
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:700px){
+    .myname{
+        font-size: 60px;
+    }
+}
+@media(max-width:640px){
+    .myname{
+        font-size: 55px;
+        text-align: center;
+    }
+    .job{
+        text-align: center;
+    }
+    .details-about-me{
+        font-size: 20px;
+        text-align: center;
+    }
+    .buttons-container{
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+}
+@media(max-width:600px){
+    .myname{
+        font-size: 55px;
+    }
+    .details-about-me{
+        font-size: 18px;
+    }
+}
+@media(max-width:550px){
+    .myname{
+        font-size: 50px;
+    }
+    .details-about-me{
+        font-size: 16px;
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .project-title{
+        font-size: 38px;
+    }
+    .project-section{
+        margin-top: 100px;
+    }
+}
+@media(max-width:475px){
+    .myname{
+        font-size: 45px;
+    }
+    .details-about-me{
+        font-size: 15px;
+    }
+    .project-title{
+        font-size: 35px;
+    }
+    .project-name{
+        font-size: 32px;
+    }
+    .about-project{
+        font-size: 14px;
+        width: 70%;
+    }
+    .soc-section{
+        margin-top: 0px;
+    }
+    .project-btn{
+        width: 140px;
+        font-size: 16px;
+    }
+    .header-name{
+        font-size: 16px;
+    }
+}
+@media(max-width:475px){
+    .myname{
+        font-size: 38px;
+    }
+    .details-about-me{
+        font-size: 14px;
+    }
+    .fa-github,.fa-linkedin-in,.fa-instagram{
+        font-size: 30px;
+    }
+    .project-section{
+        margin-top: 70px;
+    }
+    .footer-name{
+        margin-top: 14px;
+    }
+}
+@media(max-width:362px){
+    .myname{
+        font-size: 36px;
+    }
+    .project-title{
+        font-size: 34px;
+    }
+    .project-name{
+        font-size: 30px;
+    }
+}
+@media(max-width:350px){
+    .myname{
+        font-size: 32px;
+    }
+    .project-title{
+        font-size: 34px;
+    }
+    .details-about-me{
+        font-size: 13px;
+    }
+    .project-name{
+        font-size: 30px;
+    }
+}
