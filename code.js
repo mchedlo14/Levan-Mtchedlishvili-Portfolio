@@ -14,3 +14,16 @@ function effects(){
 }
 
 effects()
+
+function burgerbar(){
+    let nav = document.getElementById('nav');
+    let bar = document.getElementById('bar');
+    let header = document.querySelector('.header-parent')
+
+    bar.addEventListener('click',function(){
+        nav.classList.toggle('active')
+        header.classList.toggle('newheader')
+    })
+}
+
+burgerbar()

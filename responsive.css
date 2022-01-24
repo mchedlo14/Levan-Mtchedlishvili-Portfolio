@@ -25,12 +25,45 @@
         display: block;
         margin-right: 20px;
         font-size: 25px;
+        margin-top: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .header{
+        height: auto;
+    }
+    .header-parent{
+        height: auto;
+        align-items: inherit;
+        display: inherit;
+        position: relative; 
+    }
+    .header-parent.newheader{
+        height: 220px;
+        align-items: inherit;
+        display: inherit;
+        position: relative; 
+        background-color: #FDC435;
     }
     .navigation{
         display: none;
+        height: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
+    .nav-ul{
+        flex-direction: column;
+    }
+    .nav-li{
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .header-name{
-        margin-left: 20px;
+        text-align: center;
     }
     .img{
         height: 150px;
@@ -42,7 +75,9 @@
     .about-me-text{
         font-size: 16px;
         text-align: start;
-        
+    }
+    .navigation.active{
+        display: block;
     }
 }
 
