@@ -1,3 +1,25 @@
+@media(max-width:1150px){
+    .slidedown-div{
+        width: 100%;
+    }
+}
+@media(max-width:1000px){
+    .contact-container{
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+@media(max-width:950px){
+    .myimg{
+        width: 250px;
+        height: 250px;
+    }
+    .about-me-text{
+        font-size: 19px;
+        text-align: start;
+    }
+}
 @media(max-width:768px){
     .bar{
         display: block;
@@ -13,6 +35,15 @@
     .img{
         height: 150px;
     }
+    .myimg{
+        width: 220px;
+        height: 220px;
+    }
+    .about-me-text{
+        font-size: 16px;
+        text-align: start;
+        
+    }
 }
 
 @media(max-width:700px){
@@ -21,6 +52,24 @@
     }
     .img{
         height: 150px;
+    }
+    .about-section{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .about-me-header{
+        text-align: center;
+        font-size: 35px;
+    }
+    .about-me-text{
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .about-btn{
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 @media(max-width:640px){
@@ -72,6 +121,7 @@
     .myname{
         font-size: 45px;
     }
+    
     .details-about-me{
         font-size: 15px;
     }
@@ -86,7 +136,7 @@
         width: 70%;
     }
     .soc-section{
-        margin-top: 0px;
+        margin-top: 80px;
     }
     .project-btn{
         width: 140px;

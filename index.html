@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -22,17 +23,25 @@
 <body>
     <header class="header">
         <div class="header-parent">
-            <p class="header-name">Levan Mtchedlishvili</p>
-
+            <a href="index.html"><p class="header-name">Levan Mtchedlishvili</p></a>
             <nav class="navigation">
                 <ul class="nav-ul">
-                    <li class="nav-li">About</li>
-                    <li class="nav-li">Projects</li>
-                    <li class="nav-li">Contact</li>
+                    <a href="index.html"><li class="nav-li">Home</li></a>
+                    <a href="about.html"><li class="nav-li">About</li></a>
+                    <li class="nav-li" id="li-contact">Contact</li>
                 </ul>
             </nav>
 
             <i class="fas fa-bars bar"></i>
+        </div>
+
+        <div class="slidedown-div">
+            <div class="contact-container">
+                <p class="contact-info">Email: Golocogo4@gmail.com</p>
+                <p class="contact-info">Mobile: +995 593 122 128</p>
+                <a href="https://github.com/mchedlo14" target="__blank"><p class="contact-info">Git: https://github.com/mchedlo14</p></a>
+            </div>
+            <i class="far fa-times-circle close-icon"></i>
         </div>
     </header>
 
