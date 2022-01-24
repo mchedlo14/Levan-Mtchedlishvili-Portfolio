@@ -27,3 +27,18 @@ function burgerbar(){
 }
 
 burgerbar()
+
+function aboutmemoretext(){
+
+    $('#resume-btn').click(function(){
+        let btn_text = $(this).text()
+        $('.about-slide-down').slideToggle('slow')
+        
+        if(btn_text === 'More'){
+            $(this).text('Less')
+        }else{
+            $(this).text('More')
+        }
+    })
+}
+aboutmemoretext()

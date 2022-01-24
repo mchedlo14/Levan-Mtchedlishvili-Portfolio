@@ -19,6 +19,10 @@
         font-size: 19px;
         text-align: start;
     }
+    .about-me-more-text{
+        font-size: 19px;
+        text-align: start;
+    }
 }
 @media(max-width:768px){
     .bar{
@@ -76,8 +80,24 @@
         font-size: 16px;
         text-align: start;
     }
+    .about-me-more-text{
+        font-size: 16px;
+        text-align: start;
+    }
+    
     .navigation.active{
         display: block;
+    }
+}
+@media(max-width:740px){
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-info{
+        text-align: center;
+    }
+    .close-icon{
+        margin-top: 10px;
     }
 }
 
@@ -101,6 +121,14 @@
         margin-left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        font-size: 18px;
+    }
+    .about-me-more-text{
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 18px;
     }
     .about-btn{
         margin-left: 50%;
