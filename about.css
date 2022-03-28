@@ -147,7 +147,7 @@
   font-size: 45px;
   line-height: 130%;
   font-family: "Nunito", sans-serif;
-  text-align: center;
+  /* text-align: center; */
 }
 .about-me-text {
   font-style: normal;
@@ -183,6 +183,8 @@
   line-height: 150%;
   color: #25282b;
   cursor: pointer;
+  /* margin-left: 50%;
+  transform: translateX(-50%); */
 }
 .about-btn:hover {
   border: 2px solid #25282b;
