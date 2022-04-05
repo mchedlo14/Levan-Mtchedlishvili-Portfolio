@@ -1,353 +1,380 @@
 .header{
-    width: 100%;
-    height: 56px;
-  }
-  .header-parent{
-    max-width: 1140px;
-    height: 56px;
+  width: 100%;
+  height: 56px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  /* top: 0;
+  background-color: #FDC435;
+  z-index: 1; */
+}
+.header-parent{
+  max-width: 1140px;
+  height: 56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-name{
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 180%;
+  padding-top: 12px;
+  color: #25282B;
+  color: white;
+}
+.navigation{
+  width: 291px;
+  height: 28px;
+  margin-top: 12px;
+}
+.nav-ul{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.nav-li{
+  color:#25282B ;
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  position: relative;
+  color: white;
+}
+.nav-li::after{
+  content: '';
+  position: absolute;
+  background-color: #FDC435;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.nav-li:hover::after{
+  width: 100%;
+}
+
+
+.bar{
+  display: none;
+}
+/******************section first ***********************/
+.section-first{
+  max-width: 600px;
+  height: 408px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.job{
+  color: #FDC435;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+}
+.myname{
+  color: #25282B;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 120%;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+.details-about-me{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 125%;
+  color: #828282;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 32px;
+}
+.buttons-container{
+  width: 244px;
+  height: 43px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.cv-btn{
+  width: 115px;
+  height: 43px;
+  background-color:#FDC435 ;
+  color: #25282B;
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+}
+.cv-btn:hover{
+  border: 2px solid #25282B;
+  font-size: 15px;
+  background-color: white;
+  transition: 0.4s;
+}
+.linkedIn-btn{
+  width:117px ;
+  height: 43px;
+  background-color: white;
+  color: #25282B;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: 'Nunito', sans-serif;
+  border: 0;
+  border: 2px solid #25282B;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.linkedIn-btn:hover{
+  background-color:#FDC435 ;
+  border: 0;
+  transition: 0.4s;
+  font-size: 15px;
+}
+
+/*************** projects section ****************/
+
+.project-section{
+  max-width: 992px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 213px;
+}
+
+.project-title{
+  color: #25282B;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  text-align: center;
+}
+body{
+  background-color: #F9FAFF;;
+}
+.yellow-underline{
+  width: 100px;
+  height: 4px;
+  background-color: #FDC435;
+  border-radius: 2px;
+  margin:0 auto;
+  margin-top: 4px;
+}
+.first-project{
+  max-width: 550px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.project-name{
+  color: #25282B;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+.about-project{
+  width: 407px;
+  color: #828282;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+.project-btn{
+  width: 150px;
+  height: 43px;
+  background-color: white;
+  border: 0;
+  border-radius: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  border: 1px solid #25282B;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  cursor: pointer;
+  color: #25282B;
+}
+.project-btn:hover{
+  background-color:#FDC435 ;
+  border: 0;
+  transition: 0.7s;
+  font-size: 18px;
+}
+
+
+/*************** soc section ****************/
+
+.soc-section{
+  width: 192px;
+  height: 102px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.soc-parent{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-github{
+  color: #25282B;
+  font-size: 35px;
+  color: white;
+}
+.fa-github:hover{
+  color: black;
+}
+.fa-linkedin-in{
+  color: #25282B;
+  font-size: 35px;
+  color: white;
+}
+.fa-linkedin-in:hover{
+  color: #0e76a8;
+}
+.fa-instagram{
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+.fa-instagram:hover{
+  color: #a4508b;
+}
+.footer-name{
+  text-align: center;
+  margin-top: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #828282;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+.img{
+  width: 100%;
+  height: 200px;
+}
+.slidedown-div{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    display: none;
+}
+.contact-container{
+    width: 70%;
+    height: 50px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-  .header-name{
-    font-family: 'Comfortaa', cursive;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 180%;
-    padding-top: 12px;
-    color: #25282B;
-  }
-  .navigation{
-    width: 291px;
-    height: 28px;
-    margin-top: 12px;
-  }
-  .nav-ul{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  .nav-li{
+}
+.contact-info{
+    padding-top: 15px;
     color:#25282B ;
     font-family: 'Comfortaa', cursive;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    position: relative;
-  }
-  .nav-li::after{
-    content: '';
-    position: absolute;
-    background-color: #FDC435;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-  }
-  .nav-li:hover::after{
-    width: 100%;
-  }
-
-  
-  .bar{
-    display: none;
-  }
-  /******************section first ***********************/
-  .section-first{
-    max-width: 600px;
-    height: 408px;
-    margin: 0 auto;
-    margin-top: 100px;
-  }
-  .job{
-    color: #FDC435;
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 27px;
-  }
-  .myname{
-    color: #25282B;
-    margin-top: 12px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 120%;
-    font-family: 'Nunito', sans-serif;
-  }
-  .details-about-me{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 125%;
-    color: #828282;
-    font-family: 'Nunito', sans-serif;
-    margin-top: 32px;
-  }
-  .buttons-container{
-    width: 244px;
-    height: 43px;
-    margin-top: 32px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .cv-btn{
-    width: 115px;
-    height: 43px;
-    background-color:#FDC435 ;
-    color: #25282B;
-    border: 0;
-    font-family: 'Nunito', sans-serif;
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    cursor: pointer;
-  }
-  .cv-btn:hover{
-    border: 2px solid #25282B;
-    font-size: 15px;
-    background-color: white;
-    transition: 0.4s;
-  }
-  .linkedIn-btn{
-    width:117px ;
-    height: 43px;
-    background-color: white;
-    color: #25282B;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    font-family: 'Nunito', sans-serif;
-    border: 0;
-    border: 2px solid #25282B;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  .linkedIn-btn:hover{
-    background-color:#FDC435 ;
-    border: 0;
-    transition: 0.4s;
-    font-size: 15px;
-  }
-  
-  /*************** projects section ****************/
-  
-  .project-section{
-    max-width: 992px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 213px;
-  }
-  
-  .project-title{
-    color: #25282B;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 72px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-  }
-  body{
-    background-color: #F9FAFF;;
-  }
-  .yellow-underline{
-    width: 100px;
-    height: 4px;
-    background-color: #FDC435;
-    border-radius: 2px;
-    margin:0 auto;
-    margin-top: 4px;
-  }
-  .first-project{
-    max-width: 550px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 80px;
-  }
-  .project-name{
-    color: #25282B;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 150%;
-    margin-top: 100px;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-  }
-  .about-project{
-    width: 407px;
-    color: #828282;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-    font-family: 'Nunito', sans-serif;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 30px;
-    text-align: center;
-  }
-  .project-btn{
-    width: 150px;
-    height: 43px;
-    background-color: white;
-    border: 0;
-    border-radius: 24px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    border: 1px solid #25282B;
-    font-style: normal;
-    font-weight: 500;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 30px;
-    cursor: pointer;
-    color: #25282B;
-  }
-  .project-btn:hover{
-    background-color:#FDC435 ;
-    border: 0;
-    transition: 0.7s;
-    font-size: 18px;
-  }
-  
-  
-  /*************** soc section ****************/
-  
-  .soc-section{
-    width: 192px;
-    height: 102px;
-    margin: 0 auto;
-    margin-top: 120px;
-  }
-  .soc-parent{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .fa-github{
-    color: #25282B;
-    font-size: 35px;
-  }
-  .fa-linkedin-in{
-    color: #25282B;
-    font-size: 35px;
-  }
-  .fa-instagram{
-    font-size: 35px;
-  }
-  .footer-name{
-    text-align: center;
-    margin-top: 32px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 22px;
-    color: #828282;
-    font-family: 'Comfortaa', cursive;
-  }
-  .img{
-    width: 100%;
-    height: 200px;
-  }
-  .slidedown-div{
-      width: 80%;
-      height: 50px;
-      margin: 0 auto;
-      display: none;
-  }
-  .contact-container{
-      width: 70%;
-      height: 50px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-  }
-  .contact-info{
-      padding-top: 15px;
-      color:#25282B ;
-      font-family: 'Comfortaa', cursive;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 28px;
-  }
+    line-height: 28px;
+    color: white;
+}
 .close-icon{
-    font-size: 22px;
-    cursor: pointer;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
 }
 .close-icon:hover{
-    color: #FDC435;
-    font-size: 20px;
+  color: #FDC435;
+  font-size: 20px;
 }
 
 /************ about html *************/
 
 .about-section{
-    max-width: 1100px;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
+  max-width: 1100px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 .about-left-block{
-    width: 588px;
-    height: 313px;
-    margin-top: 100px;
+  width: 588px;
+  height: 313px;
+  margin-top: 100px;
 }
 .about-me-header{
-    color: #333333;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 130%;
-    font-family: 'Nunito', sans-serif;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 130%;
+  font-family: 'Nunito', sans-serif;
 }
 .about-me-text{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    font-family: 'Nunito', sans-serif;
-    line-height: 150%;
-    color: #828282;
-    margin-top: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 150%;
+  color: #828282;
+  margin-top: 32px;
 }
 
 .about-btn{
-    width: 114px;
-    height: 43px;
-    background-color:#FDC435 ;
-    border: 0;
-    border-radius: 8px;
-    margin-top: 32px;
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #25282B;
-    cursor: pointer;
+  width: 114px;
+  height: 43px;
+  background-color:#FDC435 ;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 32px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #25282B;
+  cursor: pointer;
 }
 .about-btn:hover{
-    border: 2px solid #25282B;
-    font-size: 15px;
-    background-color: white;
-    transition: 0.4s;
+  border: 2px solid #25282B;
+  font-size: 15px;
+  background-color: white;
+  transition: 0.4s;
 }
 .myimg{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 100px;
 }
