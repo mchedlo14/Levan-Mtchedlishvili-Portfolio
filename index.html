@@ -23,39 +23,6 @@
 </head>
 <body style="background-color: #28282B;">
 
-
-
-    <!-- Messenger საუბრის დანამატი Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your საუბრის დანამატი code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101227919280899");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
     <header class="header">
         <div class="header-parent">
             <p class="header-name"><a href="index.html">Levan Mtchedlishvili</a></p>
@@ -96,51 +63,80 @@
     </section>
 
     <section class="project-section" >
-        <h2 class="project-title">Projects</h2>
+        <h2 class="project-title">Javascript Projects</h2>
         <div class="yellow-underline"></div>
-        <div class="first-project" data-aos="fade-left" data-aos-once="true">
-            <h3 class="project-name">ToDo App</h3>
-            <p class="about-project">ToDo List App is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do.</p>
-            <a href="https://mchedlo14.github.io/todo-App/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+        <div class="javascipt-projects">
+            <div class="first-project" data-aos="fade-left" data-aos-once="true">
+                <h3 class="project-name">ToDo App</h3>
+                <p class="about-project">ToDo List App is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do.</p>
+                <a href="https://mchedlo14.github.io/todo-App/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
+
+            <div class="first-project" data-aos="fade-right" data-aos-once="true">
+                <h3 class="project-name">Weather App</h3>
+                <p class="about-project">In this project you can search the country and see the weather forecast.</p>
+                <a href="https://mchedlo14.github.io/Weather-App/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
+
+            <div class="first-project" data-aos="fade-left" data-aos-once="true">
+                <h3 class="project-name">Sign Up Validation</h3>
+                <p class="about-project"> Data Format Validation − Secondly, the data that is entered must be checked for correct form and value. Your code must include appropriate logic to test correctness of data.</p>
+                <a href="https://mchedlo14.github.io/Sign-up-Validation/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
+
+            <div class="first-project" data-aos="fade-right" data-aos-once="true">
+                <h3 class="project-name">Advice Generator</h3>
+                <p class="about-project">do you have a problem? Advice generator will help you.Maybe find a solution.</p>
+                <a href="https://mchedlo14.github.io/adviceGenerator/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
+
+
+            <div class="first-project" data-aos="fade-left" data-aos-once="true">
+                <h3 class="project-name">Landing Page</h3>
+                <p class="about-project"> It's a standalone web page with full responsive.</p>
+                <a href="https://mchedlo14.github.io/LP/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
+
+            <div class="first-project" data-aos="fade-right" data-aos-once="true">
+                <h3 class="project-name">Covid Map</h3>
+                <p class="about-project"> It's a program where you can see covid statistic.(python project)</p>
+                <a href="https://github.com/mchedlo14/CovidMap" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
+
+            <div class="first-project" data-aos="fade-left" data-aos-once="true">
+                <h3 class="project-name">Formula One Results</h3>
+                <p class="about-project"> In this project you can see the winners of the F1 from 2015 to the present.(python project)</p>
+                <a href="https://github.com/mchedlo14/F1ResultsPython" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
         </div>
+            <div style="margin-top: 200px;">
+                <h2 class="project-title">React JS Projects</h2>
+                <div class="yellow-underline"></div>
+            </div>
+        <div class="react-projects">
+            <div class="first-project" data-aos="fade-left" data-aos-once="true">
+                <h3 class="project-name">Movie App</h3>
+                <p class="about-project">I used api in this project.You can see the list of movies.also You can search movies.</p>
+                <a href="https://movieappimdb.netlify.app" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
 
-        <div class="first-project" data-aos="fade-right" data-aos-once="true">
-            <h3 class="project-name">Weather App</h3>
-            <p class="about-project">In this project you can search the country and see the weather forecast.</p>
-            <a href="https://mchedlo14.github.io/Weather-App/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
-        </div>
-
-        <div class="first-project" data-aos="fade-left" data-aos-once="true">
-            <h3 class="project-name">Sign Up Validation</h3>
-            <p class="about-project"> Data Format Validation − Secondly, the data that is entered must be checked for correct form and value. Your code must include appropriate logic to test correctness of data.</p>
-            <a href="https://mchedlo14.github.io/Sign-up-Validation/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
-        </div>
-
-        <div class="first-project" data-aos="fade-right" data-aos-once="true">
-            <h3 class="project-name">Advice Generator</h3>
-            <p class="about-project">do you have a problem? Advice generator will help you.Maybe find a solution.</p>
-            <a href="https://mchedlo14.github.io/adviceGenerator/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
-        </div>
+            <div class="first-project" data-aos="fade-right" data-aos-once="true">
+                <h3 class="project-name">Advice App</h3>
+                <p class="about-project">do you have a problem? Advice generator will help you.Maybe find a solution.</p>
+                <a href="https://advicerapp.netlify.app" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
 
 
-        <div class="first-project" data-aos="fade-left" data-aos-once="true">
-            <h3 class="project-name">Landing Page</h3>
-            <p class="about-project"> It's a standalone web page with full responsive.</p>
-            <a href="https://mchedlo14.github.io/LP/" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
-        </div>
+            <div class="first-project" data-aos="fade-left" data-aos-once="true">
+                <h3 class="project-name">Github Users</h3>
+                <p class="about-project">In this project you can find github users.</p>
+                <a href="https://advicerapp.netlify.app" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
+            </div>
 
-        <div class="first-project" data-aos="fade-right" data-aos-once="true">
-            <h3 class="project-name">Covid Map</h3>
-            <p class="about-project"> It's a program where you can see covid statistic.(python project)</p>
-            <a href="https://github.com/mchedlo14/CovidMap" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
-        </div>
 
-        <div class="first-project" data-aos="fade-left" data-aos-once="true">
-            <h3 class="project-name">Formula One Results</h3>
-            <p class="about-project"> In this project you can see the winners of the F1 from 2015 to the present.(python project)</p>
-            <a href="https://github.com/mchedlo14/F1ResultsPython" target="_blank" class="a-view-project"><button class="project-btn">View Project</button></a>
         </div>
     </section>
+
 
     <footer class="soc-section">
         <div class="soc-parent">
